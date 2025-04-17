@@ -40,6 +40,13 @@ export default defineConfig({
         navigateFallback: null,
       },
     }),
+    createHtmlPlugin({
+      inject: {
+        data: {
+          monitoringScript: `<script async defer src="https://monitoring.maxynetwork.it/visitors-metrics.js" data-website-id="cm9lloc7j0004ratnjywyf9fh"></script>`,
+        },
+      },
+    }),
   ],
   resolve: {
     alias: {
